@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./style.css" type="text/css">
     <title>learnit.now</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
 
@@ -15,29 +18,18 @@
     <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.css" />
     <script src="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.min.js"></script>
 </head>
-<body onload="init()">
-<div id="firepad"></div>
-<script>
-    function init() {
-        // Initialize Firebase.
-        var config = {
-            apiKey: "AIzaSyC-UmzZh1QBe61yc9cdAoEITJfN3v_P0ZQ",
-            authDomain: "fir-firsttest-5635d.firebaseapp.com",
-            databaseURL: "https://fir-firsttest-5635d.firebaseio.com",
-            storageBucket: "fir-firsttest-5635d.appspot.com",
-            messagingSenderId: "931278023084"
-        };
-        firebase.initializeApp(config);
 
-        // Get Firebase Database reference.
-        var firepadRef = firebase.database().ref();
+<body>
+<div id="div1">
+    <button type="musicButton">music</button>
+</div>
 
-        // Create Ace editor.
-        var editor = ace.edit('firepad');
+<div id="div2">
+    <button type="gameButton">games</button>
+</div>
 
-        // Create Firepad.
-        var firepad = Firepad.fromACE(firepadRef, editor);
-    }
-</script>
+<div id="firepad"></div><br>
+
+<script src="script.js"></script>
 </body>
 </html>
