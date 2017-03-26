@@ -27,3 +27,7 @@
      var roomName = $(this).text();
      createRoom(roomName);
  });
+
+$('button').dblclick(function () {
+    location.reload(true);
+});
