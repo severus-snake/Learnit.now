@@ -22,19 +22,15 @@ function firepadInit(ACEdom, fireOb) {
 
 // Create Firepad.
     Firepad.fromACE(fireOb, editor);
- }
+}
 
- /*function createRoom(roomName) {
-     new firepadInit(roomName, 'firepad');
- }*/
+$('button').click(function(event) {
+    var clicks = event;
+    console.log(clicks);
+    var roomName = $(this).text();
+    setup(roomName);
+});
 
- $('button').click(function(event) {
-     var clicks = event;
-     console.log(clicks);
-     var roomName = $(this).text();
-     setup(roomName);
+$(document).keydown('27', function () {
+ location.reload(true);
  });
-
-/*$('button').dblclick(function () {
-    location.reload(true);
-});*/
