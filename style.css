@@ -1,4 +1,5 @@
 #firepad {
+    visibility: hidden;
     position: relative;
     margin: auto;
     top: 100px;
@@ -7,22 +8,43 @@
     background-color: #f62;
 }
 
+h1 {
+    position: relative;
+    font-family: "Arial Black";
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    margin: auto;
+}
+
 body {
     background-color: #2bbab2 ;
 
 }
 
-button {
-    top: 150px;
-    left: 200px;
-    position: relative;
-    background-color: #416395 ;
-    border: 50px;
-    color: white;
-    padding: 15px 75px;
-    text-align: center;
-    text-decoration: none;
+p {
+    top: 50px;
     display: inline-block;
-    font-family: "Arial Black";
-    font-size: 50px;
+    position: relative;
+    font-family: "Droid Sans", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+form {
+    visibility: visible;
+    position: relative;
+    text-align: center;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 2em;
+
+}
+
+input {
+    font-family: "Georgia", sans-serif;
+    color: white;
+    font-size: 1em;
+    background-color: #00acfa;
 }

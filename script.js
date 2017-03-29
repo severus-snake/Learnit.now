@@ -24,13 +24,20 @@ function firepadInit(ACEdom, fireOb) {
     Firepad.fromACE(fireOb, editor);
 }
 
-$('button').click(function(event) {
-    var clicks = event;
-    console.log(clicks);
-    var roomName = $(this).text();
-    setup(roomName);
-});
+    $('a').click(function () {
+        var roomName = $('input').val();
 
-$(document).keydown('27', function () {
+        if (roomName === "") {
+            alert("Please do not enter a blank name");
+        } else {
+            $('a').css('visibility', 'hidden');
+            $('form').css('visibility', 'hidden');
+            $('#firepad').css('visibility', 'visible');
+            setup(roomName);
+            $("h1").append("Your Room Topic Is:" + " " + roomName);
+        }
+    });
+
+/*$(document).dblclick(function () {
  location.reload(true);
- });
+ });*/
