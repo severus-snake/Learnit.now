@@ -2,10 +2,15 @@
     visibility: hidden;
     position: relative;
     margin: auto;
-    top: 100px;
     width: 700px;
     height: 450px;
     background-color: #f62;
+    font-size: 1em;
+}
+
+.firepad {
+    position: relative;
+    top: 100px;
 }
 
 h1 {
@@ -13,18 +18,26 @@ h1 {
     font-family: "Arial Black";
     color: white;
     text-align: center;
-    text-decoration: underline;
     font-size: 50px;
     margin: auto;
 }
 
+h2 {
+    position: relative;
+    font-family: "Arial Black";
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+}
+
 body {
-    background-color: #2bbab2 ;
+    background-color: #1F6EB2 ;
 
 }
 
 p {
-    top: 50px;
+    bottom: 100px;
     display: inline-block;
     position: relative;
     font-family: "Droid Sans", sans-serif;
@@ -35,16 +48,21 @@ p {
 
 form {
     visibility: visible;
+    bottom: 200px;
     position: relative;
     text-align: center;
     font-family: "Droid Sans", sans-serif;
-    font-size: 2em;
+    font-size: 3em;
 
 }
 
+span {
+    color: red;
+}
+
 input {
-    font-family: "Georgia", sans-serif;
+    font-family: "Droid Sans", sans-serif;
     color: white;
     font-size: 1em;
-    background-color: #00acfa;
+    background-color: black;
 }

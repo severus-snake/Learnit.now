@@ -34,7 +34,7 @@ function firepadInit(ACEdom, fireOb) {
             $('form').css('visibility', 'hidden');
             $('#firepad').css('visibility', 'visible');
             setup(roomName);
-            $("h1").append("Your Room Topic Is:" + " " + roomName);
+            $("h2").append("Your Room Topic Is:" + " " + '<span>'+roomName+'</span>');
         }
     });
 
